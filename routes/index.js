@@ -6,4 +6,8 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Madtec' });
 });
 
+router.get('/start-project', function(req, res) {
+  res.render('start-project');
+});
+
 module.exports = router;

@@ -1,0 +1,63 @@
+extends layout
+//start
+block content
+  section.start-project
+    div.layout
+      div.layout__item
+        div.start-project__header
+          div.start-project__title
+            h2 empezar un proyecto
+          div.start-project__tagline
+            p
+              span vamos a crear algo extraordinario juntos
+        div.start-project__body
+          div.start-project__form(class="palm-1/1 lap-and-up-1/2")
+            form
+              fieldset
+                legend datos de contacto
+                div
+                    input(type="text" placeholder="Nombre")
+                div   
+                    input(type="email" placeholder="Email")
+                div
+                    input(type="text" placeholder="Compañia / Organizacion")
+              
+              fieldset
+                legend tipo de proyecto
+                h3 tipo de proyecto
+                div.field(class="palm-2/4 lap-and-up-1/4")
+                  input(type="checkbox" value="websites" id="option-website")
+                  label(for="option-website") websites
+                div.field(class="palm-2/4 lap-and-up-1/4")
+                  input(type="checkbox" value="aplicaciones" id="option-apps")
+                  label(for="option-apps") aplicaciones
+                div.field(class="palm-2/4 lap-and-up-1/4")
+                  input(type="checkbox" value="ecommerce" id="option-ecommerce")
+                  label(for="option-ecommerce") eCommerce
+                div.field(class="palm-2/4 lap-and-up-1/4")
+                  input(type="checkbox" value="Websites" id="option-other")
+                  label(for="option-other") other
+              
+              fieldset
+                legend presupuesto
+                h3 presupuesto
+                p
+                  span un presupuesto transparente nos ayudara a asegurar
+                    | que se cumplen las expectativas.
+                input(type="range" min="800" max="30000")
+              
+              fieldset
+                legend sobre el proyecto
+                h3 tiempo para realizarlo
+                label(for="timeframe") hay una fecha limite o periodo de tiempo especifico para
+                  | el proyecto?
+                input(type="text" id="timeframe")
+                
+                h3 hablanos sobre tu proyecto
+                label(for="about-project") describe el proyecto, necesidades y objectivos
+                textarea(id="about-project" title="Cuentanos mas sobre tu proyecto")
+
+                h3 archivos adjuntos
+                label(for="project-attachments") sube cualquier imagen o documento que pueda ayudarnos a entender mejor 
+                  | el proyecto
+                input(type="file" id="project-attachments")
