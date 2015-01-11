@@ -4,7 +4,6 @@
 
 - Estudio
 ⋅⋅* Estudiamos tu las necesidades de tu negocio y de los clientes para poder entender el objetivo del proyecto.
-
 - Estrategia
 ⋅⋅* Creamos un plan de negocio y una estrategia ajustada a tus necesidades basandonos en todos los datos obtenidos en la fase de estudio. 
 
