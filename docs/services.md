@@ -13,16 +13,16 @@
 
 ## Creacion
 
-- Branding
+- ### Branding
    Nuestro equipo creativo se asegurara de que tu marca tiene todo el impacto y la presencia que se merece. 
 
-- Experiencia de usuario UX
+- ### Experiencia de usuario UX
    Creando una buena experiencia para el usuario aseguramos la fidelidad de los usuarios.
 
-- Redaccion de contenidos
-   ### El contenido es primordial
+- ### Redaccion de contenidos
+   #### El contenido es primordial
    Partiendo de un documento inicial, nuestro "content manager" organiza y redacta el contenido para que el usuario pueda navegar y manejar la informacion facilmente. Asi como crear nuevo contenido de valor, para garantizar el retorno de los usuarios.
 
-- Video y fotografia
+- ### Video y fotografia
    Nos encargamos de realizar un completo reportaje fotografico ajustado a las necesidades de tu negocio, asi como video corporativo o creativo (timelapse, motion graphics).
    Photshpere recorrido virtual como en Google maps.
