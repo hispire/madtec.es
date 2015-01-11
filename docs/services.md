@@ -54,7 +54,20 @@
 - ### conexion con redes sociales (facebook, twitter, linkedin...)
    #### gestionamos de manera optima las redes sociales.
    Nustro content manager se encargara de mantener actualizado y captar atencion en las redes sociales.
-   Asi como crear camnapans publicitarias en facebook o comentar el lanzamiento de productos en twitter. 
+   Asi como crear campañas publicitarias en facebook, comentar el lanzamiento de productos en twitter o gestionar el negocio en linkedin. 
 
 - ### blogging
    Muchas veces es fundamental tener un blog, podemos facilitarte una plataforma para tener uno o nosotros nos encargamos de crear articulos de calidad y de interes que atraigan a los clientes.
+
+
+## gestion
+
+- ### dominio y alojamiento
+   Nos encargamos de comprar y mantener los diferentes dominios y subdominios que necesite tu negocio.
+   Adaptamos a tus necesidades los servicios de alojamiento(cuentas de correo, espacio, trafico de datos...) para que pagues **solo** por lo que necesitas
+
+- ### seguridad y SSL
+   Nuestros servicios de alta calidad incluyen todas las modernas medidas de seguridad y soporte SSL para que los datos esten siempre protegidos y las transacciones sean totalmente seguras.
+
+- ### estadisticas y reportes
+   Utilizar las ultimas tecnologias para generar y gestionar estadisticas de uso y consumo de tu negocio en internet, nos permite ofrecerte reportes y soluciones inteligentes. Para estar continuamente mejorarando y ofreciendo nuevos servicios que aseguran la fidelidad de los usuarios.
