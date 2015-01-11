@@ -26,3 +26,35 @@
 - ### Video y fotografia
    Nos encargamos de realizar un completo reportaje fotografico ajustado a las necesidades de tu negocio, asi como video corporativo o creativo (timelapse, motion graphics).
    Photshpere recorrido virtual como en Google maps.
+
+
+## Desarrollo
+
+- ### websites and aplicaciones
+   Nos encargamos de proporcionar una solucion completa desde la presentacion de la informacion, hasta el panel de administracion.
+   
+- ### gestor de contenido
+   Si lo necesitas te proporcionamos un sistema para que puedas gestionar el contenido.
+
+- ### nueva funcionalidad
+   Nustra agil metodologia de trabajo nos permite proporcionarte nuevos servicios y mejoras en un tiempo record.
+
+- ### optimizacion nuevos dispositivos
+   Somos conscientes del crecimiento en el uso de nuevos dispositivos ya sea movil o grandes pantallas. Por eso nos aseguramos de que tu website/aplicacion este optimizada para todos los dispositivos.
+
+
+## Social
+
+- ### codificacion SEO friendly
+   Por supuesto estructuramos el contenido y usamos los elementos de HTML optimos para que los buscadores entiendan tu negocio lo mejor posible.
+
+- ### campañas de marketing en buscadores
+   Nos encargamos de hacer campanas de Adwords cuando sea necesario para potenciar las distintas etapas de venta.
+
+- ### conexion con redes sociales (facebook, twitter, linkedin...)
+   #### gestionamos de manera optima las redes sociales.
+   Nustro content manager se encargara de mantener actualizado y captar atencion en las redes sociales.
+   Asi como crear camnapans publicitarias en facebook o comentar el lanzamiento de productos en twitter. 
+
+- ### blogging
+   Muchas veces es fundamental tener un blog, podemos facilitarte una plataforma para tener uno o nosotros nos encargamos de crear articulos de calidad y de interes que atraigan a los clientes.
