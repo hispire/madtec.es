@@ -15,7 +15,7 @@ block content
       li.menu__item
         a(href="#").menu__link servicios
     div(class="ph mb")
-      div.layout__item(class="1/1").button.button-success
+      div(class="1/1").button.button-success
         a(href="/start-project").menu__link start a project
     div.social__links
       div.layout__item(class="1/3")
@@ -136,9 +136,17 @@ block content
             div(class="layout__item palm-1/1 lap-and-up-1/2")
               h4 trabajo
               p hemos preparado un simple planeador de proyectos para conocerte m,ejor a ti y atu proyecto.
+              div(class="1/1").button.button-success
+                a(href="/start-project").menu__link start a project
+
 
             div(class="layout__item palm-1/1 lap-and-up-1/2")
               h4 jugar
               p hemos preparado un simple planeador de proyectos para conocerte m,ejor a ti y atu proyecto.
+              div(class="1/1").button.button-primary
+                a(href="mailto:info@madtec.es").menu__link info@madtec.es
+
       footer
-        p copyright, todos los derechos reservados 
+        p copyright
+          sup &#169
+          | , todos los derechos reservados 
