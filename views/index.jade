@@ -1,5 +1,130 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+
+  nav.ui.sidebar.right.menu 
+    ul.menu__list.list-block
+      li.menu__item
+        a(href="#").menu__link servicios
+      li.menu__item
+        a(href="#").menu__link servicios
+      li.menu__item
+        a(href="#").menu__link servicios
+      li.menu__item
+        a(href="#").menu__link servicios
+      li.menu__item
+        a(href="#").menu__link servicios
+
+  div.pusher
+    header(class='front section--highlight pv--')
+      div.wrapper
+        div.layout.layout--middle 
+          div(class='layout__item 1/2')
+            h2.logo
+              a.logo__link(href="#") madtec
+          div(class='layout__item 1/2')
+            div.menu-button menu
+        div.tagline
+          p personas, ideas, innovacion
+          h1.tagline__title tu negocio necesita un heroe
+          p app, movil, e-commerce
+      
+
+    main
+      section(class="pv")
+        div.wrapper
+          div(class='mb+')
+            h2.section__title servicios
+            p conoce lo que ofrecemos
+          nav
+            ul.layout
+              li(class='layout__item lap-1/2 desk-1/5')
+                div(class='block mb++')
+                  div.block__img
+                    a(href="#")
+                      img(src="")
+                  div.block__body
+                    h3.block__title.block-1 analisis
+                    p negocio
+                    p estrategia
+              li(class='layout__item lap-1/2 desk-1/5')
+                div(class='block mb++')
+                  div.block__img
+                    a(href="#")
+                      img(src="")
+                  div.block__body
+                    h3.block__title.block-2 analisis
+                    p negocio
+                    p estrategia
+              li(class='layout__item lap-1/2 desk-1/5')
+                div(class='block mb++')
+                  div.block__img
+                    a(href="#")
+                      img(src="")
+                  div.block__body
+                    h3.block__title.block-3 analisis
+                    p negocio
+                    p estrategia
+              li(class='layout__item lap-1/2 desk-1/5')
+                div(class='block mb++')
+                  div.block__img
+                    a(href="#")
+                      img(src="")
+                  div.block__body
+                    h3.block__title.block-4 analisis
+                    p negocio
+                    p estrategia
+              li(class='layout__item lap-1/2 desk-1/5')
+                div(class='block mb++')
+                  div.block__img
+                    a(href="#")
+                      img(src="")
+                  div.block__body
+                    h3.block__title.block-5 analisis
+                    p negocio
+                    p estrategia
+
+      section(class='section--dark pv')
+        div.wrapper
+          div(class='mb+')
+            h2.section__title quienes somos
+            p conocenos mas de cerca
+          
+          h4 en que creemos
+          p 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          h4 que hacemos
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          h4 como trabajamos
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      section(class='pv')
+        div.wrapper
+          div(class='mb+')
+            h2.section__title casos de estudio
+            p lo que hemos construido
+         
+          ul
+            li.layout
+              div(class="layout__item")
+                img(src="/images/image.jpg").cases__img
+              div(class="layout__item")
+                h4 el molar de rus
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                a(href="#") saber mas ...
+
+      section(class='section--dark pv')
+        div.wrapper
+          div(class='mb+')
+            h2.section__title contacto
+            p vamos a crear algo esxtraordinario juntos
+          div.layout
+            div(class="layout__item")
+              h4 trabajo
+              p hemos preparado un simple planeador de proyectos para conocerte m,ejor a ti y atu proyecto.
+
+            div(class="layout__item")
+              h4 jugar
+              p hemos preparado un simple planeador de proyectos para conocerte m,ejor a ti y atu proyecto.
+      footer
+        p copyright, todos los derechos reservados 

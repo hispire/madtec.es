@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "homepage": "https://github.com/madtec/madtec.es",
   "authors": [
-    "Giorgix <jackosinapsis@gmail.com>"
+    "Giorgix <jackosinapsis@gmail.com>",
+    "twissell <mail@twissell.com>"
   ],
   "description": "madtec website",
   "keywords": [
@@ -19,5 +20,16 @@
     "./public/bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "inuit-normalize": "~3.0.1",
+    "semantic-ui-sidebar": "*",
+    "inuit-layout": "~0.3.2",
+    "inuit-widths": "~0.3.2",
+    "inuit-block": "~0.1.2",
+    "inuit-flag": "~0.3.2",
+    "inuit-spacing": "~0.6.2",
+    "inuit-list-block": "~0.4.2",
+    "inuit-widths-responsive": "~0.1.3"
+  }
 }
