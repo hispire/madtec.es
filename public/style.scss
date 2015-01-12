@@ -4,6 +4,7 @@
 @import 'bower_components/inuit-functions/_tools.functions';
 @import 'bower_components/inuit-responsive-tools/_tools.responsive';
 @import 'bower_components/inuit-normalize/_generic.normalize';
+@import 'bower_components/inuit-box-sizing/_generic.box-sizing';
 
 $inuit-enable-layout--middle: true;
 $inuit-enable-layout--center: true;
@@ -14,8 +15,10 @@ $inuit-enable-layout--center: true;
 @import 'bower_components/inuit-flag/_objects.flag';
 @import 'bower_components/inuit-widths/_trumps.widths';
 @import 'bower_components/inuit-widths-responsive/_trumps.widths-responsive';
+$inuit-enable-margins: true;
 $inuit-enable-margins--large: true;
 $inuit-enable-margins--huge: true;
+$inuit-enable-paddings--small: true;
 $inuit-enable-paddings--tiny: true;
 $inuit-enable-paddings: true;
 @import 'bower_components/inuit-spacing/_trumps.spacing';
@@ -168,4 +171,52 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+/*
+ * start-proyect
+ */
+.start-project {
+  text-align: center;
+  @extend .mt;
+  @extend .mb;
+  @extend .ph;
+}
+.start-project__form {
+  display: inline-block;
+}
+fieldset {
+  border:0;
+}
+.field {
+  display: inline-block;
+}
+input, select{
+  @extend .mb;
+  //@include inuit-font-size(22px);
+  @extend .p-;
+  color: #333333;
+  width: 100%;
+  font-weight: 300;
+  display:inline-block;
+}
+input, textarea {
+  //border-radius: 4px;
+}
+input[type="checkbox"] {
+  width: auto;
+}
+label {
+  display:inline-block;
+}
+textarea {
+  //@include inuit-font-size(14px);
+  @extend .p-;
+  @extend .mb;
+  height: 12em; 
+  width: 100%;
+  color: #333333;
+}
+legend {
+  display: none;
 }

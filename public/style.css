@@ -360,6 +360,25 @@ th {
   padding: 0; }
 
 /*------------------------------------*\
+    #BOX-SIZING
+\*------------------------------------*/
+/**
+ * Set the global `box-sizing` state to `border-box`.
+ *
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ * paulirish.com/2012/box-sizing-border-box-ftw
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/*------------------------------------*\
     #LAYOUT
 \*------------------------------------*/
 /**
@@ -392,13 +411,7 @@ th {
   vertical-align: top;
   /* [3] */
   width: 100%;
-  /* [4] */
-  -webkit-box-sizing: border-box;
-  /* [5] */
-  -moz-box-sizing: border-box;
-  /* [5] */
-  box-sizing: border-box;
-  /* [5] */ }
+  /* [4] */ }
 
 /**
  * Align layout items to the vertical centers of each other.
@@ -1378,6 +1391,34 @@ th {
  * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical less/more/none
  */
 /**
+ * Margin helper classes.
+ *
+ * Add margins.
+ */
+.m {
+  margin: 24px !important; }
+
+.mt, .start-project {
+  margin-top: 24px !important; }
+
+.mr {
+  margin-right: 24px !important; }
+
+.mb, .start-project, input, select, textarea {
+  margin-bottom: 24px !important; }
+
+.ml {
+  margin-left: 24px !important; }
+
+.mh {
+  margin-right: 24px !important;
+  margin-left: 24px !important; }
+
+.mv {
+  margin-top: 24px !important;
+  margin-bottom: 24px !important; }
+
+/**
  * Add large margins.
  */
 .m\+ {
@@ -1449,7 +1490,7 @@ th {
 .pl {
   padding-left: 24px !important; }
 
-.ph {
+.ph, .start-project {
   padding-right: 24px !important;
   padding-left: 24px !important; }
 
@@ -1482,6 +1523,32 @@ th {
 .pv-- {
   padding-top: 6px !important;
   padding-bottom: 6px !important; }
+
+/**
+ * Add small paddings.
+ */
+.p-, input, select, textarea {
+  padding: 12px !important; }
+
+.pt- {
+  padding-top: 12px !important; }
+
+.pr- {
+  padding-right: 12px !important; }
+
+.pb- {
+  padding-bottom: 12px !important; }
+
+.pl- {
+  padding-left: 12px !important; }
+
+.ph- {
+  padding-right: 12px !important;
+  padding-left: 12px !important; }
+
+.pv- {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important; }
 
 html {
   font-family: 'Lato', sans-serif;
@@ -1593,3 +1660,38 @@ footer {
 
 footer p {
   margin: 0; }
+
+/*
+ * start-proyect
+ */
+.start-project {
+  text-align: center; }
+
+.start-project__form {
+  display: inline-block; }
+
+fieldset {
+  border: 0; }
+
+.field {
+  display: inline-block; }
+
+input, select {
+  color: #333333;
+  width: 100%;
+  font-weight: 300;
+  display: inline-block; }
+
+input[type="checkbox"] {
+  width: auto; }
+
+label {
+  display: inline-block; }
+
+textarea {
+  height: 12em;
+  width: 100%;
+  color: #333333; }
+
+legend {
+  display: none; }
