@@ -1,0 +1,47 @@
+/*
+ * start-proyect
+ */
+.start-project {
+  text-align: center;
+  @extend .mt;
+  @extend .mb;
+  @extend .ph;
+}
+.start-project__form {
+  display: inline-block;
+}
+fieldset {
+  border:0;
+}
+.field {
+  display: inline-block;
+}
+input, select{
+  @extend .mb;
+  @include inuit-font-size(22px);
+  @extend .p-;
+  color: #333333;
+  width: 100%;
+  font-weight: 300;
+  display:inline-block;
+}
+input, textarea {
+  border-radius: 4px;
+}
+input[type="checkbox"] {
+  width: auto;
+}
+label {
+  display:inline-block;
+}
+textarea {
+  @include inuit-font-size(14px);
+  @extend .p-;
+  @extend .mb;
+  height: 12em; 
+  width: 100%;
+  color: #333333;
+}
+legend {
+  display: none;
+}
