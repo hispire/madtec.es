@@ -35,6 +35,7 @@
     "inuit-spacing-responsive": "~0.0.4",
     "inuit-list-bare": "~0.3.0",
     "inuit-media": "~0.4.2",
-    "inuit-list-inline": "~0.3.2"
+    "inuit-list-inline": "~0.3.2",
+    "inuit-buttons": "~0.4.1"
   }
 }

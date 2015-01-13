@@ -289,7 +289,7 @@
   .btn, .btn:hover, .btn:active, .btn:focus {
     text-decoration: none;
     /* [4] */
-    color: #fff; }
+    color: white; }
 
 /**
  * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
@@ -1683,5 +1683,3 @@ hr {
   background-color: transparent;
   border-color: #FEFEFE;
   border-radius: 4px; }
-
-/*# sourceMappingURL=style.css.map */
