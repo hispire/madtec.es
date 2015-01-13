@@ -5,18 +5,16 @@ block content
   nav(class='ui sidebar right band--dark')
     ul(class='list-block')
       li
-        a(href="#") servicios
+        a(href="#services") servicios
       li
-        a(href="#") servicios
+        a(href="#about") quienes somos
       li
-        a(href="#") servicios 
+        a(href="#cases") casos de estudio 
       li
-        a(href="#") servicios
+        a(href="#contact") contacto
       li
-        a(href="#") servicios
-      li
-        div(class='btn btn--highlight')
-          a(class='text--uppercase' href="#") start a project
+        a(class='text--uppercase' href="/start-project")
+          div(class='btn btn--highlight') start a project
 
     ul(class='list-inline')
       li
@@ -50,7 +48,7 @@ block content
       
 
     main
-      section(class='pv++')
+      section(class='pv++' id="services")
         div(class='wrapper')
           div(class='section-header mb++')
             h2(class='section-header__title') servicios
@@ -73,42 +71,42 @@ block content
                     a(href="#")
                       img(src="")
                   div(class='block__body')
-                    h3 analisis
+                    h3 creación
                     hr(class='line line--red') 
-                    p negocio
-                    p estrategia
+                    p branding
+                    p contenido
               li(class='layout__item lap-1/2 desk-1/5')
                 div(class='block pb++ desk-pb0 text--center')
                   div(class='block__img')
                     a(href="#")
                       img(src="")
                   div(class='block__body')
-                    h3 analisis
+                    h3 desarrollo
                     hr(class='line line--red') 
-                    p negocio
-                    p estrategia
+                    p funcionalidad
+                    p online
               li(class='layout__item lap-1/2 desk-1/5')
                 div(class='block pb++ desk-pb0 text--center')
                   div(class='block__img')
                     a(href="#")
                       img(src="")
                   div(class='block__body')
-                    h3 analisis
+                    h3 social
                     hr(class='line line--red') 
-                    p negocio
-                    p estrategia
+                    p conectar
+                    p buscar 
               li(class='layout__item lap-1/2 desk-1/5')
                 div(class='block text--center')
                   div(class='block__img')
                     a(href="#")
                       img(src="")
                   div(class='block__body')
-                    h3 analisis
+                    h3 gestión
                     hr(class='line line--red') 
-                    p negocio
-                    p estrategia
+                    p seguridad
+                    p mejoras
 
-      section(class='band--dark pv++')
+      section(class='band--dark pv++' id="about")
         div(class='wrapper wrapper--small')
           div(class='section-header mb++')
             h2(class='section-header__title') quienes somos
@@ -122,7 +120,7 @@ block content
             h4 como trabajamos
             p(class='last') Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      section(class='pv++')
+      section(class='pv++' id="cases")
         div(class='wrapper')
           div(class='section-header mb++')
             h2(class='section-header__title') casos de estudio
@@ -138,7 +136,7 @@ block content
                 div(class="layout__item palm-1/1 lap-and-up-1/2")
                   img(src="/images/image.jpg")
 
-      section(class='band--dark pv++')
+      section(class='band--dark pv++' id="contact")
         div(class='wrapper wrapper--small')
           div(class='section-header mb++')
             h2(class='section-header__title') contacto
@@ -148,16 +146,16 @@ block content
               div(class='band--highlight text--center p mb')
                 h4 Trabajo
                 p hemos preparado un simple planeador de proyectos para conocerte m,ejor a ti y atu proyecto.
-                div(class="btn btn--highlight")
-                  a(class='text--uppercase' href="/start-project") start a project
+                a(class='text--uppercase' href="/start-project")
+                  div(class="btn btn--highlight") start a project
 
 
             div(class="layout__item palm-1/1 lap-and-up-1/2")
               div(class='band--light text--center p')
                 h4 Jugar
                 p hemos preparado un simple planeador de proyectos para conocerte m,ejor a ti y atu proyecto.
-                div(class="btn btn--highlight")
-                  a(href="mailto:info@madtec.es") info@madtec.es
+                a(href="mailto:info@madtec.es")
+                  div(class="btn btn--highlight") info@madtec.es
 
       footer(class='band--dark pv')
         div(class='wrapper')
