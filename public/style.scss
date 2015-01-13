@@ -1,46 +1,73 @@
-//@import 'reset';
+
 @import 'bower_components/inuit-defaults/_settings.defaults';
 @import 'bower_components/inuit-responsive-settings/_settings.responsive';
 @import 'bower_components/inuit-functions/_tools.functions';
 @import 'bower_components/inuit-responsive-tools/_tools.responsive';
-@import 'bower_components/inuit-normalize/_generic.normalize';
-@import 'bower_components/inuit-box-sizing/_generic.box-sizing';
+//@import 'bower_components/inuit-normalize/_generic.normalize';
+//@import 'bower_components/inuit-box-sizing/_generic.box-sizing';
 
 $inuit-enable-layout--middle: true;
 $inuit-enable-layout--center: true;
 @import 'bower_components/inuit-layout/_objects.layout';
 @import 'bower_components/inuit-block/_objects.block';
+@import 'bower_components/inuit-media/_objects.media';
+$inuit-enable-flag--huge: true;
+$inuit-enable-flag--responsive: true;
+.flag__image {
+  width: 120px;
+  margin: 0 auto;
+}
+@import 'bower_components/inuit-flag/_objects.flag';
+@import 'bower_components/inuit-list-bare/_objects.list-bare';
 @import 'bower_components/inuit-list-block/_objects.list-block';
 
-@import 'bower_components/inuit-flag/_objects.flag';
+.list-inline > li {
+  padding: $inuit-base-spacing-unit;
+}
+@import 'bower_components/inuit-list-inline/_objects.list-inline';
+@import 'bower_components/inuit-buttons/_objects.buttons';
+
+//@import 'bower_components/inuit-flag/_objects.flag';
 @import 'bower_components/inuit-widths/_trumps.widths';
 @import 'bower_components/inuit-widths-responsive/_trumps.widths-responsive';
 $inuit-enable-margins: true;
 $inuit-enable-margins--large: true;
 $inuit-enable-margins--huge: true;
-$inuit-enable-paddings--small: true;
-$inuit-enable-paddings--tiny: true;
+//$inuit-enable-paddings--small: true;
+$inuit-enable-paddings--huge: true;
 $inuit-enable-paddings: true;
 @import 'bower_components/inuit-spacing/_trumps.spacing';
+$inuit-enable-responsive-margins: true;
+$inuit-enable-responsive-paddings--none: true;
+@import 'bower_components/inuit-spacing-responsive/_trumps.spacing-responsive';
+@import 'bower_components/inuit-clearfix/_trumps.clearfix';
 
 
-// BASE
+
 html {
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+
+  background-color: #FEFEFE;
   color: #333333;
-  background: #FEFEFE;
 }
 
-html, body {
-  height: 100%;
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Exo 2', sans-serif;
+  margin-bottom: 1.5rem;
 }
 
-h1 {
-  text-transform: uppercase;
+p { 
+  margin-bottom: 1.5rem;
 }
 
 
@@ -49,196 +76,126 @@ a {
   color: inherit;
 }
 
-
-.pusher {
-  height: 100%;
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
 }
 
-.front {
-  height: 100%;
-  position: relative;
+hr {
+  display: block;
+  margin: 0;
+  border: 0;
 }
 
-.wrapper {
-  max-width: 1100px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-left: auto;
-  margin-right: auto;
+/**************************************************
+ * HELPERS
+ **************************************************/
+
+.text--center {
   text-align: center;
 }
 
-
-
-.section__title {
-  text-transform: uppercase;
-}
-.section--dark {
-  background: #333333;
-  color: #FEFEFE;
-}
-
-.section--highlight {
-  background: #D9411E;
-  color: #FEFEFE;
-}
-
-.menu {
-  background: #333333;
-  color: #FEFEFE;
-}
-
-.menu-button {
+.text--right {
   text-align: right;
 }
 
-
-
-.tagline {
-  position: absolute; 
-  left: 0;
-  right: 0;
-  top: 30%;
-  bottom: 0;
-}
-
-
-.logo {
-  text-align: left;
-}
-
-.logo__link {
-  text-transform: capitalize;
-}
-
-
-
-
-.block__title {
+.text--uppercase {
   text-transform: uppercase;
 }
 
-.block__title:after {
-  content: '';
-  display: block;
+.last {
+  margin-bottom: 0;
+}
+
+/**************************************************
+ * LAYOUT
+ **************************************************/
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.wrapper--small {
+  max-width: 800px;
+}
+
+.band--light {
+  background-color: #FEFEFE;
+  color: #333333;
+}
+
+.band--highlight {
+  background-color: #D9411E;
+  color: #FEFEFE;
+}
+
+.band--dark {
+  background-color: #333333;
+  color: #FEFEFE;
+}
+
+.band--full {
+  height: 100%;
+}
+
+.tagline {
+  position: absolute;
+
+  top: 30%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+/**************************************************
+ * MODULE
+ **************************************************/
+
+.section-header {
+  text-align: center;
+}
+  .section-header__title {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+
+.line {
   width: 30px;
   height: 4px;
   margin: 24px auto 18px auto;
 }
 
-.block-1.block__title:after { 
-  background: #333333;
+.line--dark {
+  background-color: #333333;
 }
 
-.block-2.block__title:after { 
-  background: #E05152;
+.line--light-red {
+  background-color: #E05151;
 }
 
-.block-3.block__title:after { 
-  background: #D9411E;
+.line--red {
+  background-color: #D9411E;
 }
 
-.block-4.block__title:after { 
-  background: #FFD452;
+.line--yellow {
+  background-color: #FFD452;
 }
 
-.block-5.block__title:after { 
-  background: #75A3D1;
+.line--blue {
+  background-color: #75A3D1;
 }
 
-.block img {
-  width: 112px;
-  height: 122px;
-  display: block;
-  margin: 0 auto;
-}
-
-.block p {
-  font-weight: 300;
-  font-style: italic;
-  text-transform: capitalize;
-}
-
-.cases__img {
-  max-width: 100%;
-}
-
-footer {
-  background: black;
-  color: #FEFEFE;
-  margin: 0;
-}
-
-footer p {
-  margin: 0;
-}
-
-/*
- * start-proyect
- */
-.start-project {
-  text-align: center;
-  @extend .mt;
-  @extend .mb;
-  @extend .ph;
-}
-.start-project__form {
-  display: inline-block;
-}
-fieldset {
-  border:0;
-}
-.field {
-  display: inline-block;
-}
-input, select{
-  @extend .mb;
-  //@include inuit-font-size(22px);
-  @extend .p-;
-  color: #333333;
-  width: 100%;
-  font-weight: 300;
-  display:inline-block;
-}
-input, textarea {
-  //border-radius: 4px;
-}
-input[type="checkbox"] {
-  width: auto;
-}
-label {
-  display:inline-block;
-}
-textarea {
-  //@include inuit-font-size(14px);
-  @extend .p-;
-  @extend .mb;
-  height: 12em; 
-  width: 100%;
-  color: #333333;
-}
-legend {
-  display: none;
-}
-
-/*
- * BUTTONS
- */
-
-.button {
+.btn--highlight {
+  color: inherit;
+  background-color: transparent;
+  border-color: #FEFEFE;
   border-radius: 4px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  border: 0 none rgba(0, 0, 0, 0);
-  padding: 0.5em 1em;
-  color: #FEFEFE;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  text-transform: uppercase;
-}
-.button-success {
-  background: none repeat scroll 0 0 rgb(28, 184, 65);
-}
-.button-primary {
-  background: none repeat scroll 0 0 rgb(117, 164, 210);
+
 }

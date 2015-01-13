@@ -31,6 +31,10 @@
     "inuit-spacing": "~0.6.2",
     "inuit-list-block": "~0.4.2",
     "inuit-widths-responsive": "~0.1.3",
-    "inuit-box-sizing": "~0.2.0"
+    "inuit-box-sizing": "~0.2.0",
+    "inuit-spacing-responsive": "~0.0.4",
+    "inuit-list-bare": "~0.3.0",
+    "inuit-media": "~0.4.2",
+    "inuit-list-inline": "~0.3.2"
   }
 }
