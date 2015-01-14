@@ -5,6 +5,25 @@
  * github.com/inuitcss | inuitcss.com
  */
 /*------------------------------------*\
+    #BOX-SIZING
+\*------------------------------------*/
+/**
+ * Set the global `box-sizing` state to `border-box`.
+ *
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ * paulirish.com/2012/box-sizing-border-box-ftw
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/*------------------------------------*\
     #LAYOUT
 \*------------------------------------*/
 /**
@@ -37,13 +56,7 @@
   vertical-align: top;
   /* [3] */
   width: 100%;
-  /* [4] */
-  -webkit-box-sizing: border-box;
-  /* [5] */
-  -moz-box-sizing: border-box;
-  /* [5] */
-  box-sizing: border-box;
-  /* [5] */ }
+  /* [4] */ }
 
 /**
  * Layouts with huge gutters.
@@ -297,7 +310,7 @@
   .btn, .btn:hover, .btn:active, .btn:focus {
     text-decoration: none;
     /* [4] */
-    color: #fff; }
+    color: white; }
 
 /**
  * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
@@ -1341,6 +1354,32 @@
   padding-bottom: 6px !important; }
 
 /**
+ * Add small paddings.
+ */
+.p-, input, select, textarea {
+  padding: 12px !important; }
+
+.pt- {
+  padding-top: 12px !important; }
+
+.pr- {
+  padding-right: 12px !important; }
+
+.pb- {
+  padding-bottom: 12px !important; }
+
+.pl- {
+  padding-left: 12px !important; }
+
+.ph- {
+  padding-right: 12px !important;
+  padding-left: 12px !important; }
+
+.pv- {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important; }
+
+/**
  * Add large paddings.
  */
 .p\+ {
@@ -1663,6 +1702,21 @@ html {
 body {
   margin: 0; }
 
+/**************************
+ * FORM normalize
+***************************/
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0; }
 
@@ -1792,4 +1846,39 @@ hr {
   border-color: #333333;
   border-radius: 4px; }
 
-/*# sourceMappingURL=style.css.map */
+.btn--success {
+  background: none repeat scroll 0 0 #1cb841;
+  border-radius: 4px;
+  border: 0 none transparent; }
+
+/***********************************
+ * FORM 
+ ***********************************/
+.start-project__form {
+  display: inline-block; }
+
+fieldset {
+  border: 0; }
+
+.field {
+  display: inline-block; }
+
+input, select {
+  color: #333333;
+  width: 100%;
+  font-weight: 300;
+  display: inline-block; }
+
+input[type="checkbox"] {
+  width: auto; }
+
+label {
+  display: inline-block; }
+
+textarea {
+  height: 12em;
+  width: 100%;
+  color: #333333; }
+
+legend {
+  display: none; }

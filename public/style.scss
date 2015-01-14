@@ -4,7 +4,7 @@
 @import 'bower_components/inuit-functions/_tools.functions';
 @import 'bower_components/inuit-responsive-tools/_tools.responsive';
 //@import 'bower_components/inuit-normalize/_generic.normalize';
-//@import 'bower_components/inuit-box-sizing/_generic.box-sizing';
+@import 'bower_components/inuit-box-sizing/_generic.box-sizing';
 
 $inuit-enable-layout--middle: true;
 $inuit-enable-layout--center: true;
@@ -36,7 +36,7 @@ $inuit-enable-flag--responsive: true;
 $inuit-enable-margins: true;
 $inuit-enable-margins--large: true;
 $inuit-enable-margins--huge: true;
-//$inuit-enable-paddings--small: true;
+$inuit-enable-paddings--small: true;
 $inuit-enable-paddings--huge: true;
 $inuit-enable-paddings--large: true;
 $inuit-enable-paddings--tiny: true;
@@ -62,6 +62,20 @@ html {
 body {
   margin: 0;
 }
+
+/**************************
+ * FORM normalize
+***************************/
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
@@ -227,4 +241,46 @@ hr {
   border-color: #333333;
   border-radius: 4px;
 
+}
+.btn--success {
+  background: none repeat scroll 0 0 rgb(28, 184, 65); 
+  border-radius: 4px;
+  border: 0 none rgba(0, 0, 0, 0);
+}
+/***********************************
+ * FORM 
+ ***********************************/
+// This should be a independent component (object.form)
+.start-project__form {
+  display: inline-block;
+}
+fieldset {
+  border:0;
+}
+.field {
+  display: inline-block;
+}
+input, select{
+  //@include inuit-font-size(22px);
+  @extend .p-;
+  color: #333333;
+  width: 100%;
+  font-weight: 300;
+  display:inline-block;
+}
+input[type="checkbox"] {
+  width: auto;
+}
+label {
+  display:inline-block;
+}
+textarea {
+  //@include inuit-font-size(14px);
+  @extend .p-;
+  height: 12em; 
+  width: 100%;
+  color: #333333;
+}
+legend {
+  display: none;
 }
