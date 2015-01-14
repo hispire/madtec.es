@@ -233,6 +233,12 @@ hr {
   background-color: transparent;
   border-color: #FEFEFE;
   border-radius: 4px;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #333333;
+    background-color: #FEFEFE;
+  }
 
 }
 .btn--highlight-dark {
@@ -240,12 +246,26 @@ hr {
   background-color: transparent;
   border-color: #333333;
   border-radius: 4px;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #FEFEFE;
+    background-color: #333333;
+  }
 
 }
 .btn--success {
-  background: none repeat scroll 0 0 rgb(28, 184, 65); 
+  background-color: #1CB841; 
   border-radius: 4px;
-  border: 0 none rgba(0, 0, 0, 0);
+  border: 0 none transparent;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken(#1CB841, 5%);
+  }
+}
+.link--inline {
+  color: #75A3D1;
 }
 /***********************************
  * FORM 

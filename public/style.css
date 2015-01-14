@@ -1839,17 +1839,28 @@ hr {
   background-color: transparent;
   border-color: #FEFEFE;
   border-radius: 4px; }
+  .btn--highlight:hover, .btn--highlight:active, .btn--highlight:focus {
+    color: #333333;
+    background-color: #FEFEFE; }
 
 .btn--highlight-dark {
   color: inherit;
   background-color: transparent;
   border-color: #333333;
   border-radius: 4px; }
+  .btn--highlight-dark:hover, .btn--highlight-dark:active, .btn--highlight-dark:focus {
+    color: #FEFEFE;
+    background-color: #333333; }
 
 .btn--success {
-  background: none repeat scroll 0 0 #1cb841;
+  background-color: #1CB841;
   border-radius: 4px;
   border: 0 none transparent; }
+  .btn--success:hover, .btn--success:active, .btn--success:focus {
+    background-color: #19a239; }
+
+.link--inline {
+  color: #75A3D1; }
 
 /***********************************
  * FORM 
