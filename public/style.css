@@ -46,6 +46,14 @@
   /* [5] */ }
 
 /**
+ * Layouts with huge gutters.
+ */
+.layout--huge {
+  margin-left: -96px; }
+  .layout--huge > .layout__item {
+    padding-left: 96px; }
+
+/**
  * Align layout items to the vertical centers of each other.
  */
 .layout--middle > .layout__item {
@@ -289,7 +297,7 @@
   .btn, .btn:hover, .btn:active, .btn:focus {
     text-decoration: none;
     /* [4] */
-    color: white; }
+    color: #fff; }
 
 /**
  * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
@@ -298,6 +306,36 @@
   border: 0;
   padding: 0; }
 
+@media screen and (max-width: 719px) {
+  .palm-text--left {
+    text-align: left !important; }
+
+  .palm-text--center {
+    text-align: center !important; } }
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+  .lap-text--left {
+    text-align: left !important; }
+
+  .lap-text--center {
+    text-align: center !important; } }
+@media screen and (min-width: 720px) {
+  .lap-and-up-text--left {
+    text-align: left !important; }
+
+  .lap-and-up-text--center {
+    text-align: center !important; } }
+@media screen and (max-width: 1023px) {
+  .portable-text--left {
+    text-align: left !important; }
+
+  .portable-text--center {
+    text-align: center !important; } }
+@media screen and (min-width: 1024px) {
+  .desk-text--left {
+    text-align: left !important; }
+
+  .desk-text--center {
+    text-align: center !important; } }
 /*------------------------------------*\
     #WIDTHS
 \*------------------------------------*/
@@ -1277,6 +1315,58 @@
   padding-bottom: 24px !important; }
 
 /**
+ * Add tiny paddings.
+ */
+.p-- {
+  padding: 6px !important; }
+
+.pt-- {
+  padding-top: 6px !important; }
+
+.pr-- {
+  padding-right: 6px !important; }
+
+.pb-- {
+  padding-bottom: 6px !important; }
+
+.pl-- {
+  padding-left: 6px !important; }
+
+.ph-- {
+  padding-right: 6px !important;
+  padding-left: 6px !important; }
+
+.pv-- {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important; }
+
+/**
+ * Add large paddings.
+ */
+.p\+ {
+  padding: 48px !important; }
+
+.pt\+ {
+  padding-top: 48px !important; }
+
+.pr\+ {
+  padding-right: 48px !important; }
+
+.pb\+ {
+  padding-bottom: 48px !important; }
+
+.pl\+ {
+  padding-left: 48px !important; }
+
+.ph\+ {
+  padding-right: 48px !important;
+  padding-left: 48px !important; }
+
+.pv\+ {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important; }
+
+/**
  * Add huge paddings.
  */
 .p\+\+ {
@@ -1609,6 +1699,12 @@ hr {
 .text--uppercase {
   text-transform: uppercase; }
 
+.text--highlight .text__title {
+  text-transform: uppercase; }
+
+.text--highlight p {
+  font-style: italic; }
+
 .last {
   margin-bottom: 0; }
 
@@ -1639,6 +1735,9 @@ hr {
 
 .band--full {
   height: 100%; }
+
+.band--half {
+  height: 50%; }
 
 .tagline {
   position: absolute;
@@ -1689,3 +1788,5 @@ hr {
   background-color: transparent;
   border-color: #333333;
   border-radius: 4px; }
+
+/*# sourceMappingURL=style.css.map */

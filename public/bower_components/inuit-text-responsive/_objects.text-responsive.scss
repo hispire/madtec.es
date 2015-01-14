@@ -1,0 +1,19 @@
+@each $breakpoint in $breakpoints {
+  $alias:     nth($breakpoint, 1);
+  $condition: nth($breakpoint, 2);
+
+  // This isn’t ideal, but we definitely don’t want to generate widths
+  // for retina devices. Exclude retina media-qeuries manually.
+  @if ($alias != "retina") {
+    @include media-query($alias) {
+
+      .#{$alias}-text--left {
+        text-align: left !important;
+      }
+
+      .#{$alias}-text--center {
+        text-align: center !important;
+      }
+    }
+  }
+}

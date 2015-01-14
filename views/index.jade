@@ -1,51 +1,18 @@
+include header
 extends layout
 
 block content
 
-  nav(class='ui sidebar right band--dark')
-    ul(class='list-block')
-      li
-        a(href="#services") servicios
-      li
-        a(href="#about") quienes somos
-      li
-        a(href="#cases") casos de estudio 
-      li
-        a(href="#contact") contacto
-      li
-        a(class='text--uppercase' href="/start-project")
-          div(class='btn btn--highlight') start a project
-
-    ul(class='list-inline')
-      li
-        a(href="#")
-          span(class="fa fa-facebook-square fa-2x")
-      li
-        a(href="#")
-          span(class="fa fa-facebook-square fa-2x")
-      li
-        a(href="#")
-          span(class="fa fa-facebook-square fa-2x")
+  include menu
 
   div(class='pusher band--full')
-    
-    ////////////////////////////////////////////
-    // HEADER                                 //
-    ///////////////////////////////////////////
-    header(class='band--full band--highlight pv--')
-      div(class='wrapper')
-        div(class='layout layout--middle') 
-          div(class='layout__item 1/2')
-            h2.logo
-              a.logo__link(href="#") Madtec
-          div(class='layout__item 1/2')
-            div(class='menu-button text--right')
-              span(class="fa fa-navicon fa-2x")
-        div.tagline
-          p personas, ideas, innovacion
-          h1(class='text--uppercase') tu negocio necesita un heroe
-          p app, movil, e-commerce
-      
+
+    +header(class='band--full band--highlight pv--') 
+      div.tagline
+        p personas, ideas, innovacion
+        h1(class='text--uppercase') tu negocio necesita un heroe
+        p app, movil, e-commerce
+
 
     main
       section(class='pv++' id="services")
@@ -56,58 +23,56 @@ block content
           nav
             ul(class='layout')
               li(class='layout__item lap-1/2 desk-1/5')
-                div(class='block pb++ desk-pb0 text--center')
+                div(class='block pb+ desk-pb0 text--center')
                   div(class='block__img')
                     a(href="#")
-                      img(src="")
+                      img(src="/images/image.jpg")
                   div(class='block__body')
-                    h3 analisis
-                    hr(class='line line--red') 
-                    p negocio
-                    p estrategia
+                    div(class='text--highlight')
+                      h3(class='text__title') analisis
+                      hr(class='line line--dark') 
+                      p Negocio
+                      p Estrategia
               li(class='layout__item lap-1/2 desk-1/5')
-                div(class='block pb++ desk-pb0 text--center')
+                div(class='block pb+ desk-pb0 text--center')
                   div(class='block__img')
                     a(href="#")
-                      img(src="")
+                      img(src="/images/image.jpg")
                   div(class='block__body')
                     h3 creación
-                    hr(class='line line--red') 
+                    hr(class='line line--light-red') 
                     p branding
                     p contenido
               li(class='layout__item lap-1/2 desk-1/5')
-                div(class='block pb++ desk-pb0 text--center')
+                div(class='block pb+ desk-pb0 text--center')
                   div(class='block__img')
                     a(href="#")
-                      img(src="")
+                      img(src="/images/image.jpg")
                   div(class='block__body')
                     h3 desarrollo
                     hr(class='line line--red') 
                     p funcionalidad
                     p online
               li(class='layout__item lap-1/2 desk-1/5')
-                div(class='block pb++ desk-pb0 text--center')
+                div(class='block pb+ desk-pb0 text--center')
                   div(class='block__img')
                     a(href="#")
-                      img(src="")
+                      img(src="/images/image.jpg")
                   div(class='block__body')
                     h3 social
-                    hr(class='line line--red') 
+                    hr(class='line line--yellow') 
                     p conectar
                     p buscar 
               li(class='layout__item lap-1/2 desk-1/5')
                 div(class='block text--center')
                   div(class='block__img')
                     a(href="#")
-                      img(src="")
+                      img(src="/images/image.jpg")
                   div(class='block__body')
                     h3 gestión
-                    hr(class='line line--red') 
+                    hr(class='line line--blue') 
                     p seguridad
                     p mejoras
-            div(class="text--center")
-              a(class='text--uppercase' href="/services")
-                div(class='btn btn--highlight-dark') saber mas
 
 
       section(class='band--dark pv++' id="about")
@@ -134,8 +99,9 @@ block content
             li
               div(class='layout')
                 div(class="layout__item palm-1/1 lap-and-up-1/2")
-                  h4 El molar de rus
-                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  div(class='text--center lap-and-up-text--left')
+                    h4 El molar de rus
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                   a(href="#") saber mas ...
                 div(class="layout__item palm-1/1 lap-and-up-1/2")
                   img(src="/images/image.jpg")
@@ -161,8 +127,4 @@ block content
                 a(href="mailto:info@madtec.es")
                   div(class="btn btn--highlight") info@madtec.es
 
-      footer(class='band--dark pv')
-        div(class='wrapper')
-          p(class='last') copyright 
-            sup &#169
-            | , todos los derechos reservados 
+    include footer   

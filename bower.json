@@ -16,8 +16,8 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "./public/bower_components",
+    //"bower_components",
+    //"./public/bower_components",
     "test",
     "tests"
   ],
