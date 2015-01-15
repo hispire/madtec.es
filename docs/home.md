@@ -12,31 +12,31 @@ personas, ideas, innovacion
 
 app, movil, e-commerce
 
-##Que hacemos
+##*Que hacemos*
 
 ###Analisis
-Negocio
-Estrategia
+-Negocio
+-Estrategia
 
 ###Creación
-Branding
-Contenido
+-Branding
+-Contenido
 
 ###Desarrollo
-Funcionalidad
-Multi-plataforma
+-Funcionalidad
+-Multi-plataforma
 
 ###Social & Marketing Online
-Conectar
-Buscar(ser encontrado)
+-Conectar
+-Buscar(ser encontrado)
 
 ###Gestión
-Seguridad
-Mantenimiento
+-Seguridad
+-Mantenimiento
 
 (Proceso iterativo y evolutivo.plasmar en el diseño. video?)
 
-##Quienes Somos
+##*Quienes Somos*
 conocenos mas de cerca
 
 ###En que creemos
@@ -46,10 +46,10 @@ Creemos en el trabajo hecho cuidadosamente, y en la capacidad de la tecnología 
 ###Que Hacemos
 Somos una innovadora agencia de Madrid enfocada en el desarrollo de proyectos digitales de alta calidad. 
 
-##Como trabajamos
+###Como trabajamos
 Nuestra forma de trabajar es ágil y dinámica. Nos gustan los procesos iterativos y sencillos donde la comunicación es lo más importante. 
 
-##Casos de Estudio
+##*Casos de Estudio*
 
 ###Como hicimos elmolarderes.com
 
