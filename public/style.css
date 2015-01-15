@@ -1795,11 +1795,15 @@ hr {
 
 .tagline {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 0;
   right: 0;
-  bottom: 0;
-  text-align: center; }
+  text-align: center;
+  transform: translateY(-50%); }
+
+.tagline--half {
+  top: 25%;
+  transform: translateY(-25%); }
 
 /**************************************************
  * MODULE
