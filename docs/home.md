@@ -15,24 +15,24 @@ app, movil, e-commerce
 ##*Que hacemos*
 
 ###Analisis
--Negocio
--Estrategia
+- Negocio
+- Estrategia
 
 ###Creación
--Branding
--Contenido
+- Branding
+- Contenido
 
 ###Desarrollo
--Funcionalidad
--Multi-plataforma
+- Funcionalidad
+- Multi-plataforma
 
 ###Social & Marketing Online
--Conectar
--Buscar(ser encontrado)
+- Conectar
+- Buscar(ser encontrado)
 
 ###Gestión
--Seguridad
--Mantenimiento
+- Seguridad
+- Mantenimiento
 
 (Proceso iterativo y evolutivo.plasmar en el diseño. video?)
 
