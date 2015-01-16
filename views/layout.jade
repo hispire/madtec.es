@@ -15,3 +15,7 @@ html(class='band--full')
     script(src='bower_components/semantic-ui-sidebar/sidebar.min.js')
     script
       $('.sidebar').first().sidebar('attach events', '.menu-button');
+      $('.menu__link').click(function() {
+      $('.sidebar').first().sidebar('hide')
+      $('.sidebar').first().sidebar('pull page')
+      });
