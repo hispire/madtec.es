@@ -113,8 +113,8 @@
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   min-height: 100%;
-  -webkit-transition: -webkit-transform 500ms ease;
-          transition: transform 500ms ease;
+  -webkit-transition: -webkit-transform 100ms ease;
+          transition: transform 100ms ease;
   background: #f7f7f7;
   z-index: 2;
 }
@@ -133,8 +133,8 @@
   height: 0px;
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: -webkit-transform 500ms, opacity 500ms;
-          transition: transform 500ms, opacity 500ms;
+  -webkit-transition: -webkit-transform 100ms, opacity 100ms;
+          transition: transform 100ms, opacity 100ms;
   will-change: opacity;
   z-index: 1000;
 }

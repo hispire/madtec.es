@@ -7,15 +7,11 @@ html(class='band--full')
     link(href='http://fonts.googleapis.com/css?family=Exo+2', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Lato:400italic,300,300italic', rel='stylesheet', type='text/css')
     link(rel='stylesheet', href='style.css')
-    link(rel='stylesheet', href='bower_components/semantic-ui-sidebar/sidebar.min.css')
+    link(rel='stylesheet', href='bower_components/semantic-ui-sidebar/sidebar.css')
     link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet")
   body(class='band--full')
     block content
     script(src='bower_components/jquery/dist/jquery.min.js')
     script(src='bower_components/semantic-ui-sidebar/sidebar.min.js')
-    script
-      $('.sidebar').first().sidebar('attach events', '.menu-button');
-      $('.menu__link').click(function() {
-      $('.sidebar').first().sidebar('hide')
-      $('.sidebar').first().sidebar('pull page')
-      });
+    script(src='js/menu.js')
+   

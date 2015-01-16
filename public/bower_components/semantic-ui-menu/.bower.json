@@ -1,0 +1,40 @@
+{
+  "name": "semantic-ui-menu",
+  "description": "Menu - Semantic UI",
+  "homepage": "http://www.semantic-ui.com",
+  "author": {
+    "name": "Jack Lukic",
+    "web": "http://www.jacklukic.com"
+  },
+  "ignore": [
+    "docs",
+    "node",
+    "server",
+    "spec",
+    "src",
+    "test"
+  ],
+  "keywords": [
+    "semantic",
+    "ui",
+    "css3",
+    "framework"
+  ],
+  "license": [
+    "http://semantic-ui.mit-license.org/"
+  ],
+  "main": [
+    "menu.css"
+  ],
+  "version": "1.0.0",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.0",
+    "commit": "23d9c992d53d196897f3629b9643fe577ba65e3d"
+  },
+  "_source": "git://github.com/Semantic-Org/UI-Menu.git",
+  "_target": "~1.0.0",
+  "_originalSource": "semantic-ui-menu",
+  "_direct": true
+}
