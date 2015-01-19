@@ -310,7 +310,7 @@ html {
   .btn, .btn:hover, .btn:active, .btn:focus {
     text-decoration: none;
     /* [4] */
-    color: #fff; }
+    color: white; }
 
 /**
  * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
@@ -1741,6 +1741,9 @@ hr {
   margin: 0;
   border: 0; }
 
+p:first-letter {
+  text-transform: uppercase; }
+
 /**************************************************
  * HELPERS
  **************************************************/
@@ -1913,5 +1916,3 @@ textarea {
 
 legend {
   display: none; }
-
-/*# sourceMappingURL=style.css.map */
