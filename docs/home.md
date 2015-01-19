@@ -8,9 +8,9 @@
 
 (Creamos experiencias digitales)
 personas, ideas, innovacion
-#Tu negocio necesita un heroe
+#Cuando tu negocio encuentra un héroe
 
-app, movil, e-commerce
+app, movil, internet, e-commerce
 
 ##*Que hacemos*
 
@@ -28,7 +28,7 @@ app, movil, e-commerce
 
 ###Social & Marketing Online
 - Conectar
-- Buscar(ser encontrado)
+- Extender
 
 ###Gestión
 - Seguridad
