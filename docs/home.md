@@ -36,17 +36,24 @@ app, movil, internet, e-commerce
 
 (Proceso iterativo y evolutivo.plasmar en el diseño. video?)
 
-##*Quienes Somos*
-conocenos mas de cerca
+##*Nuestro Equipo*
+Somos un equipo de innovadores, pensadores, creadores y emprendedores que trabajan conscientes de la constante evolucion de internet y de la importancia de la collaboracion para el exito de un proyecto. 
 
 ###En que creemos
-Creemos en el trabajo hecho cuidadosamente, y en la capacidad de la tecnología para transmitir ideas y potenciar negocios. Preferimos la flexibilidad a la rigidez y pensamos que los proyectos evolucionan constantemente.
-#
+En tu negocio
+en que el 
+, la capacidad de la tecnologia, y la potencia de internet.
 
 ###Que Hacemos
-Somos una innovadora agencia de Madrid enfocada en el desarrollo de proyectos digitales de alta calidad. 
+Experiencias digitales 
+productos de alta calidad de manejo simple. .
+
 
 ###Como trabajamos
+evolucionando con internet
+desarrollando tu proyecto de modo ciclico. 
+
+
 Nuestra forma de trabajar es ágil y dinámica. Nos gustan los procesos iterativos y sencillos donde la comunicación es lo más importante. 
 
 ##*Casos de Estudio*
