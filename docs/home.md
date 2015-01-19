@@ -40,21 +40,15 @@ app, movil, internet, e-commerce
 Somos un equipo de innovadores, pensadores, creadores y emprendedores que trabajan conscientes de la constante evolucion de internet y de la importancia de la collaboracion para el exito de un proyecto. 
 
 ###En que creemos
-En tu negocio
-en que el 
-, la capacidad de la tecnologia, y la potencia de internet.
+*En tu negocio*, la capacidad de la tecnologia y la potencia de internet.
 
 ###Que Hacemos
-Experiencias digitales 
-productos de alta calidad de manejo simple. .
+*Experiencias digitales* y productos de alta calidad sencillos de manejar. 
 
 
 ###Como trabajamos
-evolucionando con internet
-desarrollando tu proyecto de modo ciclico. 
+*Evolucionando con internet* y desarrollando tu proyecto de un modo ciclico. 
 
-
-Nuestra forma de trabajar es ágil y dinámica. Nos gustan los procesos iterativos y sencillos donde la comunicación es lo más importante. 
 
 ##*Casos de Estudio*
 
@@ -64,7 +58,7 @@ Nuestra forma de trabajar es ágil y dinámica. Nos gustan los procesos iterativ
 El molar de rus es una finca de agroturismo que hospeda visitantes y elabora vino y aceite. 
 Su website corporativo había sido desarrollado años atrás y estaba desactualizado. Madtec colaboró con este cliente en el desarrollo de un nuevo website. 
 
-###El planteamiento
+###La estrategia
 Rus visita ferias internacionales en las que contacta clientes para su bodega. También debe recibir el contacto de turistas que quieren alquilar la casa rural. Nuestro punto de partida fue pedir a Rus que redactase un borrador con la información disponible.
 
 ###La solución
