@@ -1,5 +1,5 @@
 include header
-extends layout
+extends layout-project
 block content
 
   include menu
@@ -27,7 +27,7 @@ block content
               legend tipo de proyecto
               h3 tipo de proyecto
               div.field(class="palm-2/4 lap-and-up-1/4")
-                input(type="checkbox" name="project-type" value="websites" id="option-website")
+                input(type="checkbox" name="project_type" value="websites" id="option-website")
                 label(for="option-website") websites
               div.field(class="palm-2/4 lap-and-up-1/4")
                 input(type="checkbox" name="project_type" value="aplicaciones" id="option-apps")
@@ -45,7 +45,9 @@ block content
               p
                 span un presupuesto transparente nos ayudara a asegurar
                   | que se cumplen las expectativas.
-              input(type="range" min="800" name="budget" max="30000")
+                div(class="slider" id="budget-range") 
+                input(class="read text--center" type="text" id="budget" name="budget" readonly="readonly")
+              //input(type="range" min="800" name="budget" max="30000")
             
             fieldset(class="pb+")
               legend sobre el proyecto
