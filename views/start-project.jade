@@ -13,30 +13,30 @@ block content
           div(class='section-header mb++ text--center')
             h2(class='section-header__title') empezar un proyecto
             p vamos a crear algo extraordinario juntos
-          form(class="text--center")
+          form(class="text--center" method="POST" action="/start-project")
             fieldset(class="pb+")
               legend datos de contacto
               div(class="pb")
-                  input(type="text" placeholder="Nombre")
+                  input(type="text" name="name" placeholder="Nombre")
               div(class="pb")
-                  input(type="email" placeholder="Email")
+                  input(type="email" name="email" placeholder="Email")
               div
-                  input(type="text" placeholder="Compañia / Organizacion")
+                  input(type="text" name="company" placeholder="Compañia / Organizacion")
             
             fieldset(class="pb+")
               legend tipo de proyecto
               h3 tipo de proyecto
               div.field(class="palm-2/4 lap-and-up-1/4")
-                input(type="checkbox" value="websites" id="option-website")
+                input(type="checkbox" name="project-type" value="websites" id="option-website")
                 label(for="option-website") websites
               div.field(class="palm-2/4 lap-and-up-1/4")
-                input(type="checkbox" value="aplicaciones" id="option-apps")
+                input(type="checkbox" name="project_type" value="aplicaciones" id="option-apps")
                 label(for="option-apps") aplicaciones
               div.field(class="palm-2/4 lap-and-up-1/4")
-                input(type="checkbox" value="ecommerce" id="option-ecommerce")
+                input(type="checkbox" name="project_type" value="ecommerce" id="option-ecommerce")
                 label(for="option-ecommerce") eCommerce
               div.field(class="palm-2/4 lap-and-up-1/4")
-                input(type="checkbox" value="Websites" id="option-other")
+                input(type="checkbox" name="project_type" value="other" id="option-other")
                 label(for="option-other") other
             
             fieldset(class="pb+")
@@ -45,7 +45,7 @@ block content
               p
                 span un presupuesto transparente nos ayudara a asegurar
                   | que se cumplen las expectativas.
-              input(type="range" min="800" max="30000")
+              input(type="range" min="800" name="budget" max="30000")
             
             fieldset(class="pb+")
               legend sobre el proyecto
@@ -53,12 +53,12 @@ block content
                 h3 tiempo para realizarlo
                 label(for="timeframe") hay una fecha limite o periodo de tiempo especifico para
                   | el proyecto?
-                input(type="text" id="timeframe")
+                input(type="text" name="timeframe" id="timeframe")
               
               div(class="pb+")
                 h3 hablanos sobre tu proyecto
                 label(for="about-project") describe el proyecto, necesidades y objectivos
-                textarea(id="about-project" title="Cuentanos mas sobre tu proyecto")
+                textarea(id="about-project" name="project_details" title="Cuentanos mas sobre tu proyecto")
 
               div(class="pb+")
                 h3 archivos adjuntos
