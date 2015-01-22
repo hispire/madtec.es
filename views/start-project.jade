@@ -13,21 +13,21 @@ block content
           div(class='section-header mb++ text--center')
             h2(class='section-header__title') empezar un proyecto
             p vamos a crear algo extraordinario juntos
-          form(class="text--center" method="POST" action="/start-project")
+          form(class="text--center" data-parsley-validate method="POST" action="/start-project")
             fieldset(class="pb+")
               legend datos de contacto
               div(class="pb")
-                  input(type="text" name="name" placeholder="Nombre")
+                  input(type="text" name="name" placeholder="Nombre" required data-parsley-required-message = "Por favor escribe tu nombre.")
               div(class="pb")
-                  input(type="email" name="email" placeholder="Email")
+                  input(type="email" name="email" placeholder="Email" data-parsley-trigger="change" required)
               div
-                  input(type="text" name="company" placeholder="Compañia / Organizacion")
+                  input(type="text" name="company" placeholder="Compañia / Organizacion" required)
             
             fieldset(class="pb+")
               legend tipo de proyecto
               h3 tipo de proyecto
               div.field(class="palm-2/4 lap-and-up-1/4")
-                input(type="checkbox" name="project_type" value="websites" id="option-website")
+                input(type="checkbox" name="project_type" value="websites" id="option-website" data-parsley-mincheck="1" data-parsley-required="true")
                 label(for="option-website") websites
               div.field(class="palm-2/4 lap-and-up-1/4")
                 input(type="checkbox" name="project_type" value="aplicaciones" id="option-apps")
@@ -46,19 +46,19 @@ block content
                 span un presupuesto transparente nos ayudara a asegurar
                   | que se cumplen las expectativas.
               div(class="slider" id="budget-range") 
-              input(class="read text--center" type="text" id="budget" name="budget" readonly="readonly")
+              input(class="read-only text--center" type="text" id="budget" name="budget" readonly="readonly")
             fieldset(class="pb+")
               legend sobre el proyecto
               div(class="pb+")
                 h3 tiempo para realizarlo
                 label(for="timeframe") hay una fecha limite o periodo de tiempo especifico para
                   | el proyecto?
-                input(type="text" name="timeframe" id="timeframe")
+                input(type="text" name="timeframe" id="timeframe" required)
               
               div(class="pb+")
                 h3 hablanos sobre tu proyecto
                 label(for="about-project") describe el proyecto, necesidades y objectivos
-                textarea(id="about-project" name="project_details" title="Cuentanos mas sobre tu proyecto")
+                textarea(id="about-project" name="project_details" title="Cuentanos mas sobre tu proyecto" data-parsley-trigger="keyup" data-parsley-minlength="20" required)
 
               div(class="pb+")
                 h3 archivos adjuntos

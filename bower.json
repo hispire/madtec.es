@@ -35,6 +35,7 @@
     "inuit-media": "~0.4.2",
     "inuit-list-inline": "~0.3.2",
     "inuit-buttons": "~0.4.1",
-    "nouislider": "~7.0.10"
+    "nouislider": "~7.0.10",
+    "parsleyjs": "~2.0.6"
   }
 }
