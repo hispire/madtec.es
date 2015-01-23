@@ -1,3 +1,4 @@
+// Overwrite nouislider defaults
 $("#budget-range").noUiSlider({
   connect: true,
   behaviour: 'tap',
@@ -12,6 +13,7 @@ $("#budget-range").noUiSlider({
   }
 });
 
+// Show budget range values in #budget input
 var total = '' + $("#budget-range").val()[0] + '\u20AC - ' + $("#budget-range").val()[1] + '\u20AC';
 $('#budget').val(total);
 $('#budget-range').on({
@@ -20,3 +22,11 @@ $('#budget-range').on({
     $('#budget').val(total);
   }
 })
+
+// Overwrite Parsley defaults
+window.ParsleyConfig = {
+  errorClass: 'field-error',
+  successClass: 'field-success',
+  errorsWrapper: '<div class="error"></div>',
+  errorTemplate: '<span></span>'
+};
