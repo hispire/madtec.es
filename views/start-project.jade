@@ -13,7 +13,7 @@ block content
           div(class='section-header mb++ text--center')
             h2(class='section-header__title') empezar un proyecto
             p vamos a crear algo extraordinario juntos
-          form(class="text--center" data-parsley-validate method="POST" action="/start-project" enctype="multipart/form-data")
+          form(id="project-form" class="text--center" data-parsley-validate method="POST" action="/start-project" enctype="multipart/form-data")
             fieldset(class="pb+")
               legend datos de contacto
               div(class="pb")

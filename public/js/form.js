@@ -31,11 +31,28 @@ window.ParsleyConfig = {
   errorTemplate: '<span></span>'
 };
 
+
 // Dropzone config
 Dropzone.options.attachdropzone = {
   url: "/start-project",
   paramName: "file",
   maxFilesize: 3,
   clickable: true,
-  addRemoveLinks: true
+  addRemoveLinks: true,
+  autoProcessQueue: false,
+
+  init: function() {
+    projectDropzone = this;
+  }
 }
+
+// Upload files when submit, not automatically
+$('#project-form').submit(function (){
+  if($('#project-form').parsley().isValid() == true) {
+    console.log('form valid');
+    projectDropzone.processQueue();
+  } else {
+    console.log('form not valid');
+  };
+})
+
