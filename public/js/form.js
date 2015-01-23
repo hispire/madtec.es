@@ -30,3 +30,12 @@ window.ParsleyConfig = {
   errorsWrapper: '<div class="error"></div>',
   errorTemplate: '<span></span>'
 };
+
+// Dropzone config
+Dropzone.options.attachdropzone = {
+  url: "/start-project",
+  paramName: "file",
+  maxFilesize: 3,
+  clickable: true,
+  addRemoveLinks: true
+}

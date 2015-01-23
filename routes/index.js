@@ -27,6 +27,7 @@ router.post('/start-project', function(req, res) {
       res.send('Email sent!');
     }
   }) 
+  console.log(req.files);
 });
 
 module.exports = router;

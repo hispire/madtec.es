@@ -1,4 +1,5 @@
 var express = require('express');
+var multer = require('multer');
 var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
@@ -6,6 +7,9 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 
 var app = express();
+
+// Set folder for multipart-form  uploads
+app.use(multer({ dest: './uploads/'}))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
