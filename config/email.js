@@ -7,7 +7,7 @@ this.transport = nodemailer.createTransport({
     port: 465,
     auth: {
       user: "projects@madtec.es",
-      pass: "DaVinci5260"
+      pass: "pass"
     }
   });
 

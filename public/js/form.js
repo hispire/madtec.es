@@ -44,7 +44,7 @@ Dropzone.options.attachdropzone = {
   init: function() {
     projectDropzone = this;
   }
-}
+};
 
 // Upload files when submit, not automatically
 $('#project-form').submit(function (){
@@ -53,6 +53,6 @@ $('#project-form').submit(function (){
     projectDropzone.processQueue();
   } else {
     console.log('form not valid');
-  };
-})
+  }
+});
 
