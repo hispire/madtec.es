@@ -33,21 +33,23 @@ window.ParsleyConfig = {
 
 
 // Dropzone config
-Dropzone.options.attachdropzone = {
-  url: "/start-project",
-  paramName: "file",
-  maxFilesize: 3,
-  uploadMultiple: true,
-  parallelUploads: 100,
-  maxFiles: 10,
-  clickable: true,
-  addRemoveLinks: true,
-  autoProcessQueue: false,
+Dropzone.autoDiscover = false;
+var projectDropzone = new Dropzone("form#project-form", 
+  {
+    paramName: "file",
+    maxFilesize: 3,
+    uploadMultiple: true,
+    parallelUploads: 100,
+    maxFiles: 10,
+    clickable: '#dropzonePreview',
+    addRemoveLinks: true,
+    previewsContainer: '#dropzonePreview',
+    autoProcessQueue: false,
 
-  init: function() {
-    projectDropzone = this;
-  }
-};
+    init: function() {
+      projectDropzone = this;
+    }
+  });
 
 // Upload files when submit, not automatically
 $('#project-form').submit(function (){

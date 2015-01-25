@@ -46,7 +46,10 @@ block content
                 span un presupuesto transparente nos ayudara a asegurar
                   | que se cumplen las expectativas.
               div(class="slider" id="budget-range") 
-              input(class="read-only text--center" type="text" id="budget" name="budget" readonly="readonly")
+              // Fallback for nouislider
+              noscript
+                input(type="number" name="budget")
+              input(for="budget-range" class="read-only text--center" type="text" id="budget" name="budget" readonly="readonly")
             fieldset(class="pb+")
               legend sobre el proyecto
               div(class="pb+")
@@ -64,9 +67,11 @@ block content
                 h3 archivos adjuntos
                 label(for="project-attachments") sube cualquier imagen o documento que pueda ayudarnos a entender mejor 
                   | el proyecto
-                div(class="dropzone" id="attachdropzone")
-                  div(class="fallback")
-                    input(type="file" name="file")
+                div(class="uploader")
+                  div(class="dropzone-previews" id="dropzonePreview")
+                    span Drop the files here to upload
+                div(class="fallback")
+                  input(type="file" name="file")
             
             fieldset(class='pb+')
               button(type='submit' class='btn btn--success text--uppercase') mandar proyecto

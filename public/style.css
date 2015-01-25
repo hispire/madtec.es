@@ -1922,6 +1922,9 @@ input.read-only {
   font-weight: 700;
   font-size: 21px; }
 
+.uploader {
+  position: relative; }
+
 /******************************
  * Validator styles
  ******************************/

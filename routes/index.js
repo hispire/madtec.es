@@ -16,6 +16,8 @@ router.get('/start-project', function(req, res) {
 });
 
 router.post('/start-project', function(req, res) {
+  console.log(req.body);
+  console.log(req.files);
   var files = [].concat(req.files.file);
   if(files[0] != undefined) {
     var i = 0;
