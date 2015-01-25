@@ -16,18 +16,23 @@ router.get('/start-project', function(req, res) {
 });
 
 router.post('/start-project', function(req, res) {
-  console.log(req.body);
   console.log(req.files);
   var files = [].concat(req.files.file);
   if(files[0] != undefined) {
+    var attachFiles = [];
     var i = 0;
     for(var i=0;i<files.length;i++) {
-      console.log(files[i].path);
+      var file = {
+        filename: files[i].originalname ,
+        path: files[i].path
+      }
+      attachFiles.push(file);
+      console.log(attachFiles);
     }
   }
   email.transport.sendMail(email.mailOptions(req.body.name, req.body.email, req.body.company, 
                                              req.body.project_type, req.body.budget, req.body.timeframe, 
-                                             req.body.project_details), 
+                                             req.body.project_details, attachFiles), 
     function(err) {
     if(err) {
       res.status(500);

@@ -7,7 +7,7 @@ this.transport = nodemailer.createTransport({
     port: 465,
     auth: {
       user: "projects@madtec.es",
-      pass: "pass"
+      pass: "DaVinci5260"
     }
   });
 
@@ -32,15 +32,7 @@ this.mailOptions = function (name, email, company, project_type, budget, timefra
 	    "</p> <p><b>Budget: </b>"+ budget +
 	    "</p> <p><b>Timeframe: </b>"+ timeframe +
 	    "</p> <h4>Details: </h4><p>"+ details + "</p>",
-      attachments: [
-        {
-          //filename: 'image.jpg',
-          //path: 'uploads/00a64a70dc617b0a6a24045fe4a224bb.jpg'
-        }
-      ]
-    
-
-  
+      attachments: files
   }
     return mailOpts;
 };

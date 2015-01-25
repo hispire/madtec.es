@@ -52,9 +52,10 @@ var projectDropzone = new Dropzone("form#project-form",
   });
 
 // Upload files when submit, not automatically
-$('#project-form').submit(function (){
+$('#project-form').submit(function (e){
   if($('#project-form').parsley().isValid() == true) {
     console.log('form valid');
+    e.preventDefault();
     projectDropzone.processQueue();
   } else {
     console.log('form not valid');
