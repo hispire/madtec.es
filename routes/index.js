@@ -20,7 +20,6 @@ router.post('/start-project', function(req, res) {
   var files = [].concat(req.files.file);
   if(files[0] != undefined) {
     var attachFiles = [];
-    var i = 0;
     for(var i=0;i<files.length;i++) {
       var file = {
         filename: files[i].originalname ,

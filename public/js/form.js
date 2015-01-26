@@ -55,8 +55,10 @@ var projectDropzone = new Dropzone("form#project-form",
 $('#project-form').submit(function (e){
   if($('#project-form').parsley().isValid() == true) {
     console.log('form valid');
-    e.preventDefault();
-    projectDropzone.processQueue();
+    if(projectDropzone.getQueuedFiles().length != 0) {
+      e.preventDefault();
+      projectDropzone.processQueue();
+    }
   } else {
     console.log('form not valid');
   }

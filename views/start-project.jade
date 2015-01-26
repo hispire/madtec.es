@@ -50,7 +50,7 @@ block content
               noscript
                 input(type="number" name="budget")
               input(for="budget-range" class="read-only text--center" type="text" id="budget" name="budget" readonly="readonly")
-            fieldset(class="pb+")
+            fieldset(class="pb++")
               legend sobre el proyecto
               div(class="pb+")
                 h3 tiempo para realizarlo
@@ -63,17 +63,17 @@ block content
                 label(for="about-project") describe el proyecto, necesidades y objectivos
                 textarea(id="about-project" name="project_details" title="Cuentanos mas sobre tu proyecto" data-parsley-trigger="keyup" data-parsley-minlength="20" required)
 
-              div(class="pb+")
+              div
                 h3 archivos adjuntos
                 label(for="project-attachments") sube cualquier imagen o documento que pueda ayudarnos a entender mejor 
                   | el proyecto
-                div(class="uploader")
-                  div(class="dropzone-previews" id="dropzonePreview")
+                div(class="dropzone-previews uploader" id="dropzonePreview")
+                  div
                     span Drop the files here to upload
                 div(class="fallback")
                   input(type="file" name="file")
             
-            fieldset(class='pb+')
+            fieldset
               button(type='submit' class='btn btn--success text--uppercase') mandar proyecto
 
 
