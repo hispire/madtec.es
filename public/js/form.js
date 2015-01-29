@@ -14,6 +14,7 @@ $("#budget-range").noUiSlider({
 });
 
 // Show budget range values in #budget input
+/*
 var total = '' + $("#budget-range").val()[0] + '\u20AC - ' + $("#budget-range").val()[1] + '\u20AC';
 $('#budget').val(total);
 $('#budget-range').on({
@@ -21,7 +22,7 @@ $('#budget-range').on({
     var total = '' + $("#budget-range").val()[0] + '\u20AC - ' + $("#budget-range").val()[1] + '\u20AC';
     $('#budget').val(total);
   }
-})
+})*/
 
 // Overwrite Parsley defaults
 window.ParsleyConfig = {

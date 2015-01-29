@@ -310,7 +310,7 @@ html {
   .btn, .btn:hover, .btn:active, .btn:focus {
     text-decoration: none;
     /* [4] */
-    color: #fff; }
+    color: white; }
 
 /**
  * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
@@ -1792,7 +1792,7 @@ blockquote {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url("/images/superhero.jpg") no-repeat no-repeat center;
+  background: url("/images/hero.svg") no-repeat no-repeat center;
   z-index: 100; }
 
 .wrapper {
@@ -1946,16 +1946,12 @@ input.read-only {
 input.field-success,
 select.field-success,
 textarea.field-success {
-  color: #468847;
-  background-color: #DFF0D8;
-  border: 1px solid #D6E9C6; }
+  border: 1px solid #19A239; }
 
 input.field-error,
 select.field-error,
 textarea.field-error {
-  color: #B94A48;
-  background-color: #F2DEDE;
-  border: 1px solid #EED3D7; }
+  border: 1px solid #D9411E; }
 
 .error {
   opacity: 0;
@@ -1969,5 +1965,3 @@ textarea.field-error {
 
 .error.filled {
   opacity: 1; }
-
-/*# sourceMappingURL=style.css.map */

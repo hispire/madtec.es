@@ -17,13 +17,13 @@ block content
             fieldset(class="pb+")
               legend datos de contacto
               div(class="pb")
-                  input(type="text" name="name" placeholder="Nombre" required data-parsley-required-message = "Por favor escribe tu nombre.")
+                  input(type="text" name="name" placeholder="Nombre" data-parsley-trigger="change" data-parsley-required-message = "Por favor escribe tu nombre.")
               div(class="pb")
                   input(type="email" name="email" placeholder="Email" data-parsley-trigger="change" required)
               div
-                  input(type="text" name="company" placeholder="Compañia / Organizacion" required)
+                  input(type="text" name="company" placeholder="Compañia / Organizacion" data-parsley-trigger="change" required)
             
-            fieldset(class="pb+")
+            //fieldset(class="pb+")
               legend tipo de proyecto
               h3 tipo de proyecto
               div.field(class="palm-2/4 lap-and-up-1/4")
@@ -39,7 +39,7 @@ block content
                 input(type="checkbox" name="project_type" value="other" id="option-other")
                 label(for="option-other") other
             
-            fieldset(class="pb+")
+            //fieldset(class="pb+")
               legend presupuesto
               h3 presupuesto
               p
@@ -52,7 +52,7 @@ block content
               input(for="budget-range" class="read-only text--center" type="text" id="budget" name="budget" readonly="readonly")
             fieldset(class="pb++")
               legend sobre el proyecto
-              div(class="pb+")
+              //div(class="pb+")
                 h3 tiempo para realizarlo
                 label(for="timeframe") hay una fecha limite o periodo de tiempo especifico para
                   | el proyecto?

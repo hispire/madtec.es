@@ -1,5 +1,9 @@
 var express = require('express');
 var router = express.Router();
+
+// MODELS =============================
+var project = require('.././models/project.js').ProjectModel;
+
 var email = require('.././config/email.js')
 
 /* GET home page. */
@@ -15,32 +19,37 @@ router.get('/start-project', function(req, res) {
   res.render('start-project');
 });
 
-router.post('/start-project', function(req, res) {
-  console.log(req.files);
-  var files = [].concat(req.files.file);
-  if(files[0] != undefined) {
-    var attachFiles = [];
-    for(var i=0;i<files.length;i++) {
+function parseFiles(files) {
+  var filesArray = [].concat(files);
+  var parsedFiles = [];
+  if(filesArray[0] != undefined) {
+    for(var i=0;i<filesArray.length;i++) {
       var file = {
-        filename: files[i].originalname ,
-        path: files[i].path
+        filename: filesArray[i].originalname ,
+        path: filesArray[i].path
       }
-      attachFiles.push(file);
-      console.log(attachFiles);
+      parsedFiles.push(file);
     }
+  } else {
+    parsedFiles = []; 
   }
-  email.transport.sendMail(email.mailOptions(req.body.name, req.body.email, req.body.company, 
-                                             req.body.project_type, req.body.budget, req.body.timeframe, 
-                                             req.body.project_details, attachFiles), 
-    function(err) {
+  return parsedFiles;
+}
+
+router.post('/start-project', function(req, res) {
+  var projectFiles = parseFiles(req.files.file);
+  
+  project.create({name: req.body.name, email: req.body.email, company: req.body.company,
+                  description: req.body.project_details, images: projectFiles}, 
+  function(err, data) {
     if(err) {
       res.status(500);
-      res.send('Error sending email: ' + err);
+      res.send(err);
     } else {
-      res.send('Email sent!');
+      res.send('Project Created!');
+      // Maybe send confirmation mail to the client and/or us
     }
-  }) 
-  //console.log(req.files);
+  }); 
 });
 
 module.exports = router;

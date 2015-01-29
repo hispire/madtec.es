@@ -4,6 +4,17 @@ var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 
+//DB
+var mongoose = require('mongoose');
+var configDB = require('./config/db.js');
+mongoose.connect(configDB.url);
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'conecction error:'));
+db.once('open', function callback() {
+  console.log('Connected to DB');
+});
+
+// ROUTES
 var routes = require('./routes/index');
 
 var app = express();
