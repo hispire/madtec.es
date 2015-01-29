@@ -113,6 +113,10 @@ p:first-letter {
  
 }
 
+blockquote {
+  font-size: 36px;
+}
+
 /**************************************************
  * HELPERS
  **************************************************/
@@ -123,6 +127,10 @@ p:first-letter {
 
 .text--right {
   text-align: right;
+}
+
+.text--left {
+  text-align: left;
 }
 
 .text--uppercase {
@@ -160,6 +168,16 @@ p:first-letter {
   left: 0;
   background: url('/images/front.jpg') no-repeat no-repeat center;
   background-size: cover;
+}
+
+.front__fg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('/images/superhero.jpg') no-repeat no-repeat center;
+  z-index: 100;
 }
 
 .wrapper {

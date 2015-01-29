@@ -310,7 +310,7 @@ html {
   .btn, .btn:hover, .btn:active, .btn:focus {
     text-decoration: none;
     /* [4] */
-    color: white; }
+    color: #fff; }
 
 /**
  * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
@@ -1744,6 +1744,9 @@ hr {
 p:first-letter {
   text-transform: uppercase; }
 
+blockquote {
+  font-size: 36px; }
+
 /**************************************************
  * HELPERS
  **************************************************/
@@ -1752,6 +1755,9 @@ p:first-letter {
 
 .text--right {
   text-align: right; }
+
+.text--left {
+  text-align: left; }
 
 .text--uppercase {
   text-transform: uppercase; }
@@ -1779,6 +1785,15 @@ p:first-letter {
   left: 0;
   background: url("/images/front.jpg") no-repeat no-repeat center;
   background-size: cover; }
+
+.front__fg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("/images/superhero.jpg") no-repeat no-repeat center;
+  z-index: 100; }
 
 .wrapper {
   margin-left: auto;
@@ -1954,3 +1969,5 @@ textarea.field-error {
 
 .error.filled {
   opacity: 1; }
+
+/*# sourceMappingURL=style.css.map */
