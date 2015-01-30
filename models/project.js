@@ -2,21 +2,36 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
+function validator (val) {
+  if(val === undefined || val.length < 2) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+// with a custom error message
+
+var nameMsg = [validator, 'Por favor escibre tu nombre.']
+var emailMsg = [validator, 'Por favor escibre tu email.']
+var descriptionMsg = [validator, 'Por favor describe tu proyecto.']
+
 var Project = new Schema ({
   name: {
     type: String,
-    required: true
+    validate: nameMsg
   },
   email: {
     type: String,
-    required: true
+    validate: emailMsg,
+    lowercase: true
   },
   company: {
     type: String
   },
   description: {
     type: String,
-    required: true
+    validate: descriptionMsg
   },
   images: [Images]
 });
