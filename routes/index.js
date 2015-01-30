@@ -46,7 +46,7 @@ router.post('/start-project', function(req, res) {
       res.status(500);
       res.render('start-project', {valErrors: err});
     } else {
-      res.send('Project Created!');
+      res.send('Proyecto mandado!');
       // Flash error and success msg with ext library
       // Maybe send confirmation mail to the client and/or us
     }

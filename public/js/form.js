@@ -57,8 +57,25 @@ $('#project-form').submit(function (e){
   if($('#project-form').parsley().isValid() == true) {
     console.log('form valid');
     if(projectDropzone.getQueuedFiles().length != 0) {
+      e.stopPropagation();
       e.preventDefault();
       projectDropzone.processQueue();
+      projectDropzone.on('totaluploadprogress', function(res) {
+        $('#btnProject').html('Sending' + res);
+      });
+      projectDropzone.on('completemultiple', function(res) {
+        console.log(res);
+        $('#btnProject').html(res[0].xhr.response);
+        $( "<h3>gracias! contestaremos lo antes posible.</h3>" ).insertAfter( "#btnProject" );
+      });
+
+    } else {
+      e.preventDefault();
+      e.stopPropagation();
+      projectDropzone.uploadFiles([ ]);
+      $('#btnProject').html('Proyecto mandado!');
+      $( "<h3>gracias! contestaremos lo antes posible.</h3>" ).insertAfter( "#btnProject" );
+
     }
   } else {
     console.log('form not valid');

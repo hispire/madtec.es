@@ -1318,7 +1318,7 @@ require.register("dropzone/lib/dropzone.js", function (exports, module) {
       xhr.onload = (function(_this) {
         return function(e) {
           var _ref;
-          if (files[0].status === Dropzone.CANCELED) {
+          if (files[0] && files[0].status === Dropzone.CANCELED) {
             return;
           }
           if (xhr.readyState !== 4) {
@@ -1343,7 +1343,7 @@ require.register("dropzone/lib/dropzone.js", function (exports, module) {
       })(this);
       xhr.onerror = (function(_this) {
         return function() {
-          if (files[0].status === Dropzone.CANCELED) {
+          if (files[0] && files[0].status === Dropzone.CANCELED) {
             return;
           }
           return handleError();
@@ -1398,7 +1398,11 @@ require.register("dropzone/lib/dropzone.js", function (exports, module) {
         }
       }
       for (i = _m = 0, _ref5 = files.length - 1; 0 <= _ref5 ? _m <= _ref5 : _m >= _ref5; i = 0 <= _ref5 ? ++_m : --_m) {
-        formData.append(this._getParamName(i), files[i], files[i].name);
+        if(typeof files[i] != "undefined"){
+              formData.append(this._getParamName(i), files[i], files[i].name);
+        }else{
+              formData.append(this._getParamName(i), "");
+        }
       }
       return xhr.send(formData);
     };
