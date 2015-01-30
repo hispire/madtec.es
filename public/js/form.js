@@ -61,9 +61,7 @@ $('#project-form').submit(function (e){
       e.preventDefault();
       projectDropzone.processQueue();
       projectDropzone.on('totaluploadprogress', function(res) {
-        res = parseFloat(res);
-        console.log(res);
-        $('#btnProject').html('Subiendo ' + res + '%');
+        $('#btnProject').html('Subiendo ' + Math.round(res) + '%');
       });
       projectDropzone.on('completemultiple', function(res) {
         console.log(res);
