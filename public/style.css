@@ -1702,6 +1702,9 @@ html {
 body {
   margin: 0; }
 
+main {
+  background: #FCFCFC; }
+
 /**************************
  * FORM normalize
 ***************************/

@@ -115,7 +115,7 @@
   min-height: 100%;
   -webkit-transition: -webkit-transform 100ms ease;
           transition: transform 100ms ease;
-  background: #f7f7f7;
+  background: #FCFCFC;
   z-index: 2;
 }
 
