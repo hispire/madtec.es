@@ -66,7 +66,7 @@ $('#project-form').submit(function (e){
       projectDropzone.on('completemultiple', function(res) {
         console.log(res);
         $('#btnProject').html(res[0].xhr.response);
-        $( "<h3>gracias! contestaremos lo antes posible.</h3>" ).insertAfter( "#btnProject" );
+        $( "<h3 class='pt+'>gracias! contestaremos lo antes posible.</h3>" ).insertAfter( "#btnProject" );
       });
 
     } else {
@@ -74,7 +74,7 @@ $('#project-form').submit(function (e){
       e.stopPropagation();
       projectDropzone.uploadFiles([ ]);
       $('#btnProject').html('Proyecto mandado!');
-      $( "<h3>gracias! contestaremos lo antes posible.</h3>" ).insertAfter( "#btnProject" );
+      $( "<h3 class='pt+'>gracias! contestaremos lo antes posible.</h3>" ).insertAfter( "#btnProject" );
 
     }
   } else {
