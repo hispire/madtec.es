@@ -1233,7 +1233,7 @@ html {
 .mr {
   margin-right: 24px !important; }
 
-.mb {
+.mb, .alert {
   margin-bottom: 24px !important; }
 
 .ml {
@@ -1356,7 +1356,7 @@ html {
 /**
  * Add small paddings.
  */
-.p-, input, select, textarea {
+.p-, input, select, textarea, .alert {
   padding: 12px !important; }
 
 .pt- {
@@ -1968,3 +1968,14 @@ textarea.field-error {
 
 .error.filled {
   opacity: 1; }
+
+.alert {
+  border-radius: 4px; }
+
+.alert--success {
+  background-color: #97E597;
+  color: #468847; }
+
+.alert--danger {
+  background-color: #F2DEDE;
+  color: #D9411E; }

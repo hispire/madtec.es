@@ -16,7 +16,7 @@ router.get('/services', function(req, res) {
 });
 
 router.get('/start-project', function(req, res) {
-  res.render('start-project');
+  res.render('start-project', {message: req.flash()});
 });
 
 function parseFiles(files) {
@@ -38,15 +38,21 @@ function parseFiles(files) {
 
 router.post('/start-project', function(req, res) {
   var projectFiles = parseFiles(req.files.file);
-  
   project.create({name: req.body.name, email: req.body.email, company: req.body.company,
                   description: req.body.project_details, images: projectFiles}, 
   function(err, data) {
     if(err) {
       res.status(500);
-      res.render('start-project', {valErrors: err});
+      req.flash('error', err.errors); 
+      res.redirect('/start-project');
     } else {
-      res.send('Proyecto mandado!');
+      
+      if(req.body.noscript === 'noscript') {
+        req.flash('success', 'Proyecto enviado!'); 
+        res.redirect('/start-project');
+      } else {  
+        res.send('Proyecto mandado!');
+      }
       // Flash error and success msg with ext library
       // Maybe send confirmation mail to the client and/or us
     }

@@ -3,6 +3,8 @@ var multer = require('multer');
 var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
+var session = require('express-session');
+var flash = require('connect-flash');
 
 //DB
 var mongoose = require('mongoose');
@@ -32,6 +34,13 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(session({
+secret: 'AFDADGF2394021930546=--021945!@#%#$^SADFSD',
+resave: false,
+saveUninitialized: true
+}));
+app.use(flash());
 
 app.use('/', routes);
 

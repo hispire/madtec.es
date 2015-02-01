@@ -397,3 +397,16 @@ textarea.field-error {
 .error.filled {
   opacity: 1;
 }
+.alert {
+  @extend .p-;
+  @extend .mb;
+  border-radius: 4px;
+}
+.alert--success {
+  background-color: #97E597;
+  color: #468847;
+}
+.alert--danger {
+  background-color: #F2DEDE;
+  color: #D9411E;
+}
