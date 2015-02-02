@@ -52,9 +52,20 @@ var projectDropzone = new Dropzone("form#project-form",
     }
   });
 
+function addAttr() {
+  $('input, textarea').attr("required", "");
+}
+
+function resetParsleyUi () {
+  $('input, textarea').removeAttr( "required" )
+  document.getElementById("project-form").reset();
+  window.setTimeout(addAttr, 100);
+}
+
 // Upload files when submit, not automatically
 $('#project-form').submit(function (e){
-  if($('#project-form').parsley().isValid() == true) {
+  var form = $(this);
+  if(form.parsley().isValid() == true) {
     console.log('form valid');
     if(projectDropzone.getQueuedFiles().length != 0) {
       e.stopPropagation();
@@ -66,7 +77,9 @@ $('#project-form').submit(function (e){
       projectDropzone.on('completemultiple', function(res) {
         console.log(res);
         $('#btnProject').html(res[0].xhr.response);
-        $( "<h3 class='pt+'>gracias! contestaremos lo antes posible.</h3>" ).insertAfter( "#btnProject" );
+        $('#btnProject').addClass("animated fadeInDown");
+        $( "<h3 class='animated bounceInLeft pt+'>gracias! contestaremos lo antes posible.</h3>" ).insertAfter( "#btnProject" );
+        resetParsleyUi();
       });
 
     } else {
@@ -74,9 +87,11 @@ $('#project-form').submit(function (e){
       e.stopPropagation();
       projectDropzone.uploadFiles([ ]);
       $('#btnProject').html('Proyecto mandado!');
-      $( "<h3 class='pt+'>gracias! contestaremos lo antes posible.</h3>" ).insertAfter( "#btnProject" );
-
-    }
+      $('#btnProject').addClass("animated fadeInDown");
+        $( "<h3 class='animated bounceInLeft pt+'>gracias! contestaremos lo antes posible.</h3>" ).insertAfter( "#btnProject" );
+      //form.attr("data-parsley-focus", "none");
+      resetParsleyUi();
+          }
   } else {
     console.log('form not valid');
   }

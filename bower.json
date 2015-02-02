@@ -37,6 +37,7 @@
     "inuit-buttons": "~0.4.1",
     "nouislider": "~7.0.10",
     "parsleyjs": "~2.0.6",
-    "dropzone": "~3.12.0"
+    "dropzone": "~3.12.0",
+    "animate.css": "~3.2.0"
   }
 }
