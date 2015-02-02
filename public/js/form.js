@@ -88,10 +88,10 @@ $('#project-form').submit(function (e){
       projectDropzone.uploadFiles([ ]);
       $('#btnProject').html('Proyecto mandado!');
       $('#btnProject').addClass("animated fadeInDown");
-        $( "<h3 class='animated bounceInLeft pt+'>gracias! contestaremos lo antes posible.</h3>" ).insertAfter( "#btnProject" );
-      //form.attr("data-parsley-focus", "none");
+      // TODO remove msg after timeout with fade animation
+      $( "<h3 class='animated bounceInLeft pt+'>gracias! contestaremos lo antes posible.</h3>" ).insertAfter( "#btnProject" );
       resetParsleyUi();
-          }
+    }
   } else {
     console.log('form not valid');
   }
